@@ -5,22 +5,22 @@ export default async function Navigation() {
   const session = await auth();
 
   return (
-    <nav className="z-10 text-xl">
-      <ul className="flex gap-16 items-center">
+    <nav className="z-10 text-accent-600 text-xl ">
+      <ul className="flex gap-16  items-center">
         <li>
           <Link
             href="/cabins"
-            className="hover:text-accent-400 transition-colors"
+            className=" hover:text-primary-700 transition-colors"
           >
-            Cabins
+            Solutions
           </Link>
         </li>
         <li>
           <Link
             href="/about"
-            className="hover:text-accent-400 transition-colors"
+            className="hover:text-primary-50 transition-colors"
           >
-            About
+            Products
           </Link>
         </li>
         <li>
@@ -42,7 +42,7 @@ export default async function Navigation() {
               href="/account"
               className="hover:text-accent-400 transition-colors"
             >
-              Guest area
+              Experience
             </Link>
           )}
         </li>
